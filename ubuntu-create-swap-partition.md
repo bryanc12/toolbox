@@ -1,4 +1,4 @@
-# Creating swap space on Ubuntu 26.04 
+# Creating Swap Space on Ubuntu 26.04 LTS 
 
 1. Check if swap space already exists on the system \
 `sudo swapon --show` \
