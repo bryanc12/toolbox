@@ -32,7 +32,7 @@ The output should be something like this: \
 
 So in this case we will be focusing on the `sshd_config` file and the `/sshd_config.d` folder.
 
-3. Look for `PubkeyAuthentication yes` in every files(in folders too). \
+3. Look for `PasswordAuthentication yes` in every files(in folders too). \
 Starting from `/sshd_config.d` folder is recommended, usually cloud providers inject the configuration to enable password login here. \
 Using the command `nano` text editor to inspect and edit. \
 `sudo nano sshd_config` or \
@@ -44,7 +44,7 @@ Use these keyboard keys to work with `nano` text editor: \
 `Ctrl + X` - Exit \
 `Arrow Up` and `Arrow Down` - Scroll
 
-5. Update the `PubkeyAuthentication yes` to `PubkeyAuthentication no` for every lines found.
+5. Update the `PasswordAuthentication yes` to `PasswordAuthentication no` for every lines found.
 
 6. Restart the SSH Server with `sudo systemctl restart ssh`.
 
